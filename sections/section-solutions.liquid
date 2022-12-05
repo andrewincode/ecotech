@@ -3,7 +3,7 @@
 							{% for collection in collections %}
 								<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
 									<div class="card card-default feature-1 align-bottom">
-										<div class="card-content img"><img src="content/demo/feature-1.jpeg" alt="" /></div>
+										<div class="card-content img">{{- collection.image | link_to: collection.url }}</div>
 										<div class="card-header separator">
 											<div class="card-title"><a href="">Solutions</a></div>
 										</div>
