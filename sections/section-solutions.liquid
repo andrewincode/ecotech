@@ -28,7 +28,7 @@
 														<button aria-label="" class="btn dropdown-toggle btn-success btn-lg" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Choose From {{ collection.title }} Solutions</button>
 														<ul class="dropdown-menu full-width">
 															{%- for product in collection.products -%}
-															  <li><a class="dropdown-item" href="{{ product.url | within: collection }}">{{ product.title }}</a></li>
+															  <a class="dropdown-item" href="{{ product.url | within: collection }}">{{ product.title }}</a>
 															{%- endfor -%}
 														</ul>
 													</div>
