@@ -27,13 +27,9 @@
 													<div class="btn-group btn-block dropdown-success">
 														<button aria-label="" class="btn dropdown-toggle btn-success btn-lg" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Choose From {{ collection.title }} Solutions</button>
 														<ul class="dropdown-menu full-width">
-															<li><a class="dropdown-item" href="#">{{ collection.product.title }}</a></li>
-															<a class="dropdown-item" href="#">Roofs</a>
-															<a class="dropdown-item" href="#">Decks &amp; Patios</a>
-															<a class="dropdown-item" href="#">Stairs</a>
-															<a class="dropdown-item" href="#">Flooring</a>
-															<a class="dropdown-item" href="#">Tub Surround</a>
-															<a class="dropdown-item" href="#">Insulation</a>
+															{% for product in collections %}
+																<a class="dropdown-item" href="#">{{ product.title }}</a>
+															{% endfor %}
 														</ul>
 													</div>
 												</div>
