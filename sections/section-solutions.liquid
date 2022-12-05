@@ -25,7 +25,7 @@
 												<div class="d-grid gap-1">
 													<a href="{{ collection.url }}" aria-label="" type="button" class="btn btn-xs btn-default btn-block btn-icon-right">Learn more</a>
 													<div class="btn-group btn-block dropdown-success">
-														<button aria-label="" class="btn dropdown-toggle btn-success btn-lg" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Choose From {{ collection.title }} Solutions</button>
+														<button aria-label="" class="btn btn-lg dropdown-toggle btn-success" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Choose From {{ collection.title }} Solutions</button>
 														<ul class="dropdown-menu full-width">
 															{%- for product in collection.products -%}
 															  <a class="dropdown-item" href="{{ product.url | within: collection }}">{{ product.title }}</a>
@@ -44,9 +44,10 @@
 									</div>
 								</div>
 							{% endfor %}
+							<!--
 							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
 								<div class="card card-default feature-1a align-bottom">
-									<div class="card-content img"><img src="content/demo/feature-1a.jpeg" alt="" /></div>
+									<div class="card-content img"><img src="" alt="" /></div>
 									<div class="card-header separator">
 										<div class="card-title"><a href="">Solutions</a></div>
 									</div>
@@ -70,7 +71,7 @@
 							</div>
 							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
 								<div class="card card-default feature-2 align-bottom">
-									<div class="card-content img"><img src="content/demo/feature-2.jpeg" alt="" /></div>
+									<div class="card-content img"><img src="" alt="" /></div>
 									<div class="card-header separator">
 										<div class="card-title"><a href="">Solutions</a></div>
 									</div>
@@ -101,5 +102,6 @@
 									</div>
 								</div>
 							</div>
+							-->
 						</div>
 					</div>
