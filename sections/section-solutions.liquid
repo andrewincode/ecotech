@@ -1,5 +1,8 @@
-<div id="section-solutions"class="container container-fixed-lg sm-gutter no-padding">
+					<div id="section-solutions"class="container container-fixed-lg sm-gutter no-padding">
 						<div class="row welcome sm-gutter d-flex flex-row">
+							{% for collection in collections %}
+							  {{- collection.title | link_to: collection.url }}
+							{% endfor %}
 							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
 								<div class="card card-default feature-1 align-bottom">
 									<div class="card-content img"><img src="content/demo/feature-1.jpeg" alt="" /></div>
