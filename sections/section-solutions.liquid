@@ -23,7 +23,7 @@
 												<h3>{{- collection.title | link_to: collection.url }}</h3>
 												<p>{{ collection.description }}</p>
 												<div class="d-grid gap-1">
-													<button aria-label="" type="button" class="btn btn-xs btn-default btn-block btn-icon-right">Learn more</button>
+													<button href="{{ collection.url }}" aria-label="" type="button" class="btn btn-xs btn-default btn-block btn-icon-right">Learn more</button>
 													<div class="btn-group btn-block dropdown-success">
 														<button aria-label="" class="btn dropdown-toggle btn-success btn-lg" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Choose From {{ collection.title }} Solutions</button>
 														<ul class="dropdown-menu full-width">
