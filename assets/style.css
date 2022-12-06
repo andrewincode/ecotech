@@ -100,7 +100,7 @@ h1.page-title span {
 	line-height: 23px;
 }
 .separator {
-	margin-bottom:  20px;
+	margin-bottom: 5px;
 }
 p.left-footer-menu > span.sm-block::before,
 p.right-footer-menu > span.sm-block::before {
