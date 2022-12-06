@@ -1,0 +1,34 @@
+<div id="section-header" class="container container-fluid sm-gutter no-padding">
+				<div class="card card-default m-b-0">
+					<div class="card-header header">
+						<div class="header-inner justify-content-start header-lg-height title-bar">
+							<div class="brand inline align-self-end">
+								<img src="{{ 'eco.box.green.png' | asset_img_url: 'icon' }}" alt="logo" data-src="{{ 'eco.box.green.png' | asset_img_url: 'icon' }}" data-src-retina="{{ 'eco.box.green.png' | asset_img_url: 'icon' }}" width=28 height="28">
+							</div>
+							<h2 class="page-title align-self-end">{{ shop.name }}</h2>
+						</div>
+					</div>
+    				{% section 'homepage-banner' %}
+					<div class="card-footer">
+						<nav id="section-menu">
+							<div class="menu-bar header-sm-height">
+								<a href="#" class="btn-link header-icon toggle-sidebar d-lg-none" data-toggle="horizontal-menu">
+									<i class="pg-icon">close</i>
+								</a>
+								<ul>
+                  {% for link in linklists.main-menu.links %}
+                    <li>
+                      <a class="m-l-10 m-r-10" href="{{ link.url }}">
+                        <span class="title">{{ link.title }}</span>
+                      </a>
+                    </li>
+                    </span>
+                  {% endfor %}
+								</ul>
+								<a href="#" class="search-link d-flex justify-content-between align-items-center d-lg-none"
+								data-toggle="search">Tap here to search <i class="pg-search float-right"></i></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
