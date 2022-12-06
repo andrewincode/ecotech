@@ -1,6 +1,6 @@
 					<div id="section-solutions"class="container container-fixed-lg sm-gutter no-padding">
 						<div class="row welcome sm-gutter d-flex flex-row">
-							{% for article in blogs.articles limit:2 %}
+							{% for article in blogs.articles %}
                               {% assign article_tags = article.tags %}
                             {% endfor %}
 							{% for collection in collections %}
