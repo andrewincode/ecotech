@@ -52,7 +52,7 @@
 							<h2 class="page-title align-self-end">{{ shop.name }}</h2>
 						</div>
 					</div>
-    				{% section 'homepage-banner' %}
+    				{% if template == 'index' %}{% section 'homepage-banner' %}{% endif %}
 					<div class="card-footer">
 						<nav id="section-menu">
 							<div class="menu-bar header-sm-height">
