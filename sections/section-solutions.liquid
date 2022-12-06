@@ -37,8 +37,11 @@
 										</div>
 										<div class="card-footer">
 											<div class="btn-group btn-group-vertical text-left full-width">
-												<button class="btn btn-link">The best solution for commercial soundproofing.</button>
-												<button class="btn btn-link">Weatherproof your deck with Cork.</button>
+												{% for article in blogs.articles limit:2 %}
+													{% if article.tags contains collection.handle %}
+														<a class="btn btn-link" href="{{ article.url }}">{{ article.title }}</a>
+													{% endif %}
+												{% endfor %}
 											</div>
 										</div>
 									</div>
