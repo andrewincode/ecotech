@@ -9,7 +9,7 @@
 						<div class="card-header ">
 							<h5 class="text-complete pull-left fs-12 text-capitalize">
                 {%- for tag in article.tags -%}
-                  {{ tag }}
+                  {{ tag | limit:1 }}
                 {%- endfor -%}
               </h5>
 							<div class="pull-right small hint-text text-lowercase">
