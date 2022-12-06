@@ -40,8 +40,9 @@
 												{% assign collection_handle = collection.handle %}
 												<p>{{ collection_handle }}</p>
 												{% for article in blogs.articles limit:2 %}
-													<p>{{ article }}</p>
+													<p>{{ article.tags }}</p>
 													{% assign article_tags = article.tags %}
+													<p>{{ article_tags }}</p>
 													{% if article_tags contains collection_handle %}
 														<a class="btn btn-link" href="{{ article.url }}">{{ article.title }}</a>
 													{% endif %}
