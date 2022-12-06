@@ -38,7 +38,9 @@
 										<div class="card-footer">
 											<div class="btn-group btn-group-vertical text-left full-width">
 												{% assign collection_handle = collection.handle %}
+												<p>{{ collection_handle }}</p>
 												{% for article in blogs.articles limit:2 %}
+													<p>{{ article }}</p>
 													{% assign article_tags = article.tags %}
 													{% if article_tags contains collection_handle %}
 														<a class="btn btn-link" href="{{ article.url }}">{{ article.title }}</a>
