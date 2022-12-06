@@ -37,6 +37,8 @@
 										</div>
 										<div class="card-footer">
 											<div class="btn-group btn-group-vertical text-left full-width">
+													<p>this: {{ collection.handle }}</p>
+													<p>this: {{ article.tags }}</p>
 												{% for article in blogs.articles limit:2 %}
 
 													<p>{{ collection.handle }}</p>
